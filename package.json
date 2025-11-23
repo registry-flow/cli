@@ -1,0 +1,44 @@
+{
+  "name": "registryflow",
+  "version": "0.1.3",
+  "description": "A CLI tool for registryflow.com",
+  "type": "module",
+  "bin": {
+    "registryflow": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "pnpm build",
+    "version:patch": "node scripts/release.js patch",
+    "version:minor": "node scripts/release.js minor",
+    "version:major": "node scripts/release.js major",
+    "release": "node scripts/release.js patch",
+    "release:minor": "node scripts/release.js minor",
+    "release:major": "node scripts/release.js major",
+    "publish:npm": "pnpm publish --access public"
+  },
+  "keywords": [
+    "cli",
+    "registryflow",
+    "flow"
+  ],
+  "author": "Izet Molla",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/registry-flow/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/registry-flow/cli/issues"
+  },
+  "homepage": "https://github.com/registry-flow/cli#readme",
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

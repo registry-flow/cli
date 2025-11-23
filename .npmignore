@@ -1,0 +1,35 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Development files
+tsconfig.json
+.gitignore
+.npmignore
+
+# Development dependencies
+node_modules/
+/scripts
+
+# Build artifacts (source maps can be excluded if desired)
+*.map
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Lock files (optional - some prefer to include them)
+pnpm-lock.yaml
+
